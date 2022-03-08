@@ -1,0 +1,114 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: #cccccc;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: #fecd23;
+}
+
+.purplebox {
+    background: rgb(34,13,37);
+    background: linear-gradient(180deg, rgba(34,13,37,1) 0%, rgba(98,30,110,1) 75%);
+    width: 95%;
+    padding: 5px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.purplebox-reverse {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(0deg, rgba(34,13,37,1) 0%, rgba(98,30,110,1) 75%);
+}
+
+.cardbox {
+    display: flex;
+    margin: 0 auto;
+}
+
+.cardborder {
+    padding: 8px;
+    border-radius: 10px;
+    max-width: 33%;
+    margin: 5px;
+    background: linear-gradient(0deg, #2738da 0%, #342988 100%);
+}
+
+.card {
+    display: flex;
+    background: rgb(61,92,238);
+    background: linear-gradient(180deg, rgba(61,92,238,1) 0%, rgba(114,204,254,1) 100%);
+    padding: 10px;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.blackbutton {
+    background: #1d0c20;
+    padding: 10px 5px;
+    border-radius: 5px;
+    width: 30%;
+    margin: 0 auto;
+    color: #fff;
+    border: 0px;
+}
+
+.inputround {
+    border-radius: 5px;
+    width: 80%;
+    margin: 0 auto 10px auto;
+    border: 0;
+    padding: 6px;
+}
+
+footer {
+    margin-top: 10px;
+}
+
+
+/*CSS para Material Icons retirado de https://developers.google.com/fonts/docs/material_icons*/
+.material-icons-outlined {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 10em !important; /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    margin: 10px 0;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+  
+@media screen and (max-width: 728px) {
+    .cardbox {
+        flex-direction: column;
+    }
+
+    .cardborder {
+        max-width: 100%;
+        width: 20vh;
+    }
+}
