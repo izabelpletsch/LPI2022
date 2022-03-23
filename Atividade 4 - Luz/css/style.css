@@ -1,0 +1,66 @@
+body {
+    padding: 0;
+    background: #000;
+    margin: 0;
+}
+
+#ligado {
+    background: rgb(255, 196, 196);
+    background: radial-gradient(circle, rgba(255, 240, 80, 0.57) 0%, rgb(255, 225, 99) 15%, rgb(255, 196, 196) 70%);
+}
+
+#ligado2 {
+    background: rgb(255,240,80);
+    background: radial-gradient(circle, rgba(255, 240, 80, 0.57) 0%, rgb(206, 182, 80) 15%, rgb(15, 15, 15) 70%);
+}
+
+#desligado {
+    background: #000;
+}
+
+main {
+    text-align: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.lamp::after {
+    content: '◡';
+    border-radius: 100%;
+    text-shadow: 0px 0px 22px yellow;
+    height: 1em;
+    display: block;
+    color: #ffff005e;
+    font-size: 7em;
+    margin-top: -21vh;
+    width: 100%;
+
+}
+
+.lamp > svg {
+    width:30em;
+    height:30em;
+    margin-top: -2%;
+}
+
+#dance {
+    min-height: 60%;
+}
+
+#lightswitch {
+    width: 7em;
+    height: 6em;
+}
+
+footer {
+    height: 40px;
+    color: #fff;
+    text-align: center;
+    display: block;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+  }
