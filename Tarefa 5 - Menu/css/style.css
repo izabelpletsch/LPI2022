@@ -1,0 +1,126 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(158, 158, 158);
+}
+
+header {
+    text-align: center;
+}
+
+header > img {
+    width: 100%;
+}
+
+main {
+    width: 80vh;
+    margin: 0 auto;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.185);
+}
+
+#resultados { 
+    display: block;
+    padding: 0px 25px;
+}
+
+/* FLEX */
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+/* CARDS */
+
+.cards-container {
+    justify-content: space-around;
+}
+
+.card {
+    border-radius: 30px;
+    flex-grow: 1;
+    margin: 3% 2%;
+    line-height: 2em;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.27);
+    padding: 10px;
+    background: #eee;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.card > img {
+    width: 100%;
+}
+
+.preco { 
+    font-weight: bold;
+    color: green;
+    font-size: 18px;
+}
+
+/* BOTÕES */
+
+.whiteButton {
+    border-radius: 5px;
+    background: #fff;
+    padding: 5px 10px;
+    margin: 3px;
+    border: 0px solid #fff !important;
+}
+
+.whiteButton:hover {
+    background: #e7e7e7;
+}
+
+.whiteButton:active {
+    box-shadow: inset 1px 1px 0px #cacaca;
+}
+
+.formButton {
+    width: 100%;
+    border-radius: 5px;
+    border: 0px solid;
+    padding: 10px;
+    color: #fff;
+    background: #3472ff;
+}
+
+.formButton:hover {
+    background: #487fff;
+}
+
+.formButton:active {
+    background: #2a5fda;
+}
+
+.buttonContainer {
+    width: 50%;
+    justify-content: space-around;
+    display: flex;
+}
+
+/* FORM */
+
+#dados {
+    width: 85%;
+}
+
+#dados > input[type="text"] {
+    width: 100%;
+    border: 0px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+#pedidovazio {
+    font-weight: bold;
+    color: red;
+}

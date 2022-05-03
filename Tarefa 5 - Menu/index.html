@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.8-beta.17/jquery.inputmask.min.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <title>Cardápio</title>
+</head>
+<body>
+    <main>
+        <header>
+            <img src="img/comidaheader.jpg"/>
+            <h1>Menu - Faça A Sua Escolha</h1>
+        </header>
+
+        <div class="card flex-column">
+            <h2>Prato Principal</h2>
+            Todos os pratos acompanham arroz, feijão e sobremesa do dia.
+            
+            <div class="flex-row cards-container">
+                <div class="card flex-column">
+                    <img src="img/paocomovo.jpg"/>
+
+                    <b>Pão com Ovo</b>
+                    <span class="preco">R$30,00</span>
+
+                    <div class="flex-row buttonContainer">
+                        <button class="whiteButton">-</button> <span id="qtd paocomovo">0</span> <button class="whiteButton">+</button>      
+                    </div> 
+                </div>
+
+                <div class="card flex-column">
+                    <img src="img/pernilcomabacate.jpg"/>
+
+                    <b>Pernil com Abacate</b>
+                    <span class="preco">R$25,00</span>
+
+                    <div class="flex-row buttonContainer">
+                        <button class="whiteButton">-</button>  <span id="qtd pernilcomabacate">0</span> <button class="whiteButton">+</button>      
+                    </div> 
+                </div>
+
+                <div class="card flex-column">
+                    <img src="img/almondegas.jpg"/>
+
+                    <b>Almôndegas</b>
+                    <span class="preco">R$22,00</span>
+
+                    <div class="flex-row buttonContainer">
+                        <button class="whiteButton">-</button> <span id="qtd almondegas">0</span> <button class="whiteButton">+</button>      
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <div class="card flex-column">
+            <h2>Acompanhamentos</h2>
+            Porções para uma pessoa
+            
+            <div class="flex-row cards-container">
+                <div class="card flex-column">
+                    <img src="img/abacaterecheado.jpg"/>
+
+                    <b>Abacate Recheado</b>
+                    <span class="preco">R$10,00</span>
+ 
+                    <div class="flex-row buttonContainer">
+                        <button class="whiteButton">-</button> <span id="qtd abacaterecheado">0</span> <button class="whiteButton">+</button>      
+                    </div> 
+                </div>
+
+                <div class="card flex-column">
+                    <img src="img/salada.jpg"/>
+
+                    <b>Salada</b>
+                    <span class="preco">R$08,00</span>
+
+                    <div class="flex-row buttonContainer">
+                        <button class="whiteButton">-</button> <span id="qtd salada">0</span> <button class="whiteButton">+</button>      
+                    </div> 
+                </div>
+
+                <div class="card flex-column">
+                    <img src="img/batata.jpg"/>
+
+                    <b>Batata Frita</b>
+                    <span class="preco">R$12,00</span>
+
+                    <div class="flex-row buttonContainer">
+                        <button class="whiteButton">-</button> <span id="qtd batata">0</span> <button class="whiteButton">+</button>      
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <div class="card flex-column">
+            <h1> Dados Pessoais </h1>
+
+            <form class="flex-column" id="dados">
+                <input type="text" id="nomeForm" placeholder="Digite o seu nome"/>
+                <input type="text" id="telefoneForm" placeholder="Digite o seu telefone"/>
+                <input type="text" id="emailForm" placeholder="Digite o seu e-mail"/>
+            </form>
+        </div>
+
+        <input type="button" class="formButton" value="Calcular"/>
+    
+        <div id="resultados">
+
+        </div>
+    </main>
+</body>
+</html>
